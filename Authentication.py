@@ -16,6 +16,8 @@
 #      ways of importing a file, but only one best way.
 # 5. How long did it take for you to complete the assignment?
 #      1hr
+# 6. Video example
+#      https://youtu.be/u5jvpbwM_nw
 
 import json
 
