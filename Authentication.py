@@ -35,13 +35,14 @@ while(i < len(AllUsers)):
         break
     else:
         i += 1
-# checks if password is valid
+# checks if password is valid only if the username matches
 CurrPassword = input("Password: ")
 PassMatch = False
-if (CurrPassword == AllPasswords[i]):
-    PassMatch = True
+if (UserPresent != False):
+    if (CurrPassword == AllPasswords[i]):
+        PassMatch = True
 # only allows user if both username and password are valid
-if (UserPresent == True or PassMatch == True):
+if (UserPresent == True and PassMatch == True):
     print("You are authenticated!")
 else:
-    print('You do not have access to this system')
+    print("You do not have access to this system")
